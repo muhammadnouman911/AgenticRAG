@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 selection:bg-indigo-500/20 selection:text-indigo-900;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+}
+
+/* React Flow customizations for Light Theme */
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #4f46e5 !important;
+  border: 2px solid #ffffff !important;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__node {
+  @apply !border-slate-200 !shadow-sm;
+}

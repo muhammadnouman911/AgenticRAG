@@ -1,0 +1,6 @@
+{
+  "name": "AgenticRAG Research Assistant",
+  "description": "An autonomous AI research agent that thinks, searches, grades results, and provides cited answers using Agentic RAG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Research", "Document Analysis", "Knowledge Graph Extraction"]
+}
